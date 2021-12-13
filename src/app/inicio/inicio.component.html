@@ -9,21 +9,21 @@
         <div class="carousel-item active" >
           <img src="../../assets/img1.jpg" class="d-block w-100" alt="Pico"width="50" height="436">
           <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-warning fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
+              <h5 class="text-success fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
               <p class="text-light fw-bold">Caravanas de motos. Ven a disfrutar de los paisajes junto a otros motociclistas</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="../../assets/Amotos.jpg" class="d-block w-100" alt="motos"width="50" height="436">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-warning fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
+            <h5 class="text-success fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
             <p class="text-light fw-bold">Caravanas de motos. Ven a disfrutar de los paisajes junto a otros motociclistas</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="../../assets/Apoco.jpg" class="d-block w-100" alt="pico2"width="50" height="436">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-warning fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
+            <h5 class="text-success fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
               <p class="text-light fw-bold">Caravanas de motos. Ven a disfrutar de los paisajes junto a otros motociclistas</p>
           </div>
         </div>
@@ -45,12 +45,11 @@
     <div class="row " >
         <h1 class="text-center text-bold text-success">Motociclistas registrados</h1>
       <div class="col-lg-4" *ngFor="let goal of goals; let i = index">
-        <img  src="../../assets/{{goal.imagen}}" alt="Moto" width="140" height="140">
+        <img  class="mx-auto d-block" src="../../assets/{{goal.imagen}}" alt="Moto" width="140" height="140">
         <h2> {{goal.name}}</h2>
         <p>{{goal.comments}}</p>
         <p>Edad: {{goal.age}}</p>
-        <p>Edad: {{goal.age}}</p>
-        <p>Edad: {{goal.email}}</p>
+        <p>{{goal.email}}</p>
         
       </div><!-- /.col-lg-4 -->
       

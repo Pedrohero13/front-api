@@ -12,7 +12,7 @@ const routes: Routes = [
     path : "formulario",
     component: FormularioComponent
   }
-  
+    
 ];
 
 @NgModule({
