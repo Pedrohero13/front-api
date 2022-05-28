@@ -8,6 +8,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { FormularioComponent } from './formulario/formulario.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     InicioComponent,
     FormularioComponent,
+    LoginComponent,
     
   ],
   imports: [

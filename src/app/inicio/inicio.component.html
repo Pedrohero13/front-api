@@ -1,58 +1,79 @@
 <div class="container-fluid ">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3500">
+        <img src="../../assets/carrusel1.jpg" class="d-block w-100" alt="..."height="560">
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" >
-          <img src="../../assets/img1.jpg" class="d-block w-100" alt="Pico"width="50" height="436">
-          <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-success fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
-              <p class="text-light fw-bold">Caravanas de motos. Ven a disfrutar de los paisajes junto a otros motociclistas</p>
-              
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/Amotos.jpg" class="d-block w-100" alt="motos"width="50" height="436">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-success fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
-            <p class="text-light fw-bold">Caravanas de motos. Ven a disfrutar de los paisajes junto a otros motociclistas</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/Apoco.jpg" class="d-block w-100" alt="pico2"width="50" height="436">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-success fw-bolder">CARARAVANA ORIZABA VERACRUZ</h5>
-              <p class="text-light fw-bold">Caravanas de motos. Ven a disfrutar de los paisajes junto a otros motociclistas</p>
-          </div>
-        </div>
+      <div class="carousel-item" data-bs-interval="3500">
+        <img src="../../assets/carrusel2.jpg" class="d-block w-100" alt="..."height="560">
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
+      <div class="carousel-item" data-bs-interval="3500">
+        <img src="../../assets/carrusel3.jpg" class="d-block w-100" alt="..."height="560">
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
   <div class="container marketing ">
-
+    <h1 class="h1 text-center ">INICIO</h1>
     <!-- Three columns of text below the carousel -->
-    <div class="row " >
-        <h1 class="text-center text-bold text-success">Motociclistas registrados</h1>
-      <div class="col-lg-4" *ngFor="let goal of goals; let i = index">
-        <img  class="mx-auto d-block" src="../../assets/{{goal.imagen}}" alt="Moto" width="140" height="140">
-        <h2> {{goal.name}}</h2>
-        <p>{{goal.comments}}</p>
-        <p>Edad: {{goal.age}}</p>
-        <p>{{goal.email}}</p>
-        
-      </div><!-- /.col-lg-4 -->
-      
-    </div><!-- /.row -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="h2 featurette-heading text-middle">Arte Latte</h2>
+        <p class="lead">Ven a disfrutar del mejor Arte latte de la región</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../../assets/inicio1.jpg" alt="" width="100%" height="100%">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="h2 featurette-heading">¡Todo lo que necesitas es amor... y seamos realistas tambien un buen cafe!...</h2>
+        <p class="lead">La vida sin cafe es vida a medias</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../../assets/inicio2.jpg" alt="" width="100%" height="100%">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="h2 featurette-heading">No tenemos WI-FI pero tenemos nuestra propia red social</h2>
+        <p class="lead">Disfruta del cafe sin estar conectado :D</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../../assets/inicio3.jpg" alt="" width="100%" height="100%">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="h2 featurette-heading">Un pan tostado con mantequilla y se te reinicia la vida!</h2>
+        <p class="lead">¡El mejor pan frances de la region y mas!...</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../../assets/inicio4.jpg" alt="" width="100%" height="100%">
+
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
 </div>

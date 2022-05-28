@@ -1,34 +1,90 @@
-<div class="text-center">
-    <div class="form-signin"> 
-        <div class="col">
-            <form >
-                <img class="mb-4" src="../../assets/logo.png" alt="" width="140" height="100">
-                <h1 class="h3 mb-3 fw-normal">Registrate </h1>
-                
-                <div class="form-floating">
-                    <input type="text" class="form-control" name= "item1" placeholder="life goal" [(ngModel)]="nombre">
-                    <label for="item1">Nombre</label>
-                </div>
-                
-                <div class="form-floating">
-                    <input type="text" class="form-control" name= "item2" placeholder="life goal" [(ngModel)]="email">
-                    <label for="item2">Correo</label>
-                </div>
-
-                <div class="form-floating">
-                    <input type="text" class="form-control" name= "item3" placeholder="life goal" [(ngModel)]="edad">
-                    <label for="item3">Edad</label>
-                </div>
-
-                <div class="form-floating">
-                    <input type="text" class="form-control" name= "item4" placeholder="life goal" [(ngModel)]="lema">
-                    <label for="item4">Lema</label>
-                </div>
-
-               
-
-                <input type="submit" class="btn btn-danger" value="Guardar" (click)="AgregarMeta()">
-            </form>
+<div class="container-fluid">
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="formulario">CAFE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="formulario">BEBIDAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="formulario">SÁNDWICHES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="formulario">POSTRES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="formulario">DULCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="formulario">COMIDA CORRIDA</a>
+          </li>
+        
+    </ul>
+</div>
+<div class="container">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../../assets/cafes/cafe1.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+        <div class="card-body">
+          <h5 class="card-title">Café negro</h5>
+          <p class="card-text">Solo café y azucar al gusto</p>
+          <p class="card-text">Precio: $20</p>
         </div>
+        <div class="card-footer">
+            <div class="hstack gap-3">
+                <button type="button" class="btn btn-lg text-light">Comprar</button>
+                <div class="vr bg-light"></div>
+                <div class="vr bg-light"></div>
+                <div class="vr bg-light"></div>
+                <div class="vr bg-light"></div>
+                <button type="button" class="btn btn-lg text-light">Descripción</button>
+            </div>
+
+        </div>
+      </div>
     </div>
+    <div class="col">
+        <div class="card h-100">
+          <img src="../../assets/cafes/cafe2.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+          <div class="card-body">
+            <h5 class="card-title">Cafe Cappuccino</h5>
+            <p class="card-text">Expreso, leche al vapor y espuma</p>
+            <p class="card-text">Precio: $30</p>
+          </div>
+          <div class="card-footer">
+              <div class="hstack gap-3">
+                  <button type="button" class="btn btn-lg text-light">Comprar</button>
+                  <div class="vr bg-light"></div>
+                  <div class="vr bg-light"></div>
+                  <div class="vr bg-light"></div>
+                  <div class="vr bg-light"></div>
+                  <button type="button" class="btn btn-lg text-light">Descripción</button>
+              </div>
+  
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../../assets/cafes/cafe3.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+          <div class="card-body">
+            <h5 class="card-title">Café americano</h5>
+            <p class="card-text">Expreso y agua caliente</p>
+            <p class="card-text">Precio: $15</p>
+          </div>
+          <div class="card-footer">
+              <div class="hstack gap-3">
+                  <button type="button" class="btn btn-lg text-light">Comprar</button>
+                  <div class="vr bg-light"></div>
+                  <div class="vr bg-light"></div>
+                  <div class="vr bg-light"></div>
+                  <div class="vr bg-light"></div>
+                  <button type="button" class="btn btn-lg text-light">Descripción</button>
+              </div>
+  
+          </div>
+        </div>
+      </div>
+  </div>
 </div>

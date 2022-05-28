@@ -14,17 +14,7 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
     this.itemCount = this.goals.length;
-    this._data.goal.subscribe(res=> this.goals = res);
-    this._data.changeGoal(this.goals);
-    console.log(this.goals[0])
-    this._data.getGoals()
-     .subscribe((data: any) => {
-      JSON.stringify(data.users);
-
-      this.goals = data.users;
-      this._data.changeGoal(this.goals);
-
-    });
+    
     
     
   }
